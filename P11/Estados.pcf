@@ -1,0 +1,39 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri May 12 16:13:17 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "input<4>" LOCATE = SITE "L14" LEVEL 1;
+COMP "input<5>" LOCATE = SITE "L13" LEVEL 1;
+COMP "input<6>" LOCATE = SITE "N17" LEVEL 1;
+COMP "regout<0>" LOCATE = SITE "J14" LEVEL 1;
+COMP "input<7>" LOCATE = SITE "R17" LEVEL 1;
+COMP "regout<1>" LOCATE = SITE "J15" LEVEL 1;
+COMP "regout<2>" LOCATE = SITE "K15" LEVEL 1;
+COMP "regout<3>" LOCATE = SITE "K14" LEVEL 1;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "regout<4>" LOCATE = SITE "E17" LEVEL 1;
+COMP "regout<5>" LOCATE = SITE "P15" LEVEL 1;
+COMP "regout<6>" LOCATE = SITE "F4" LEVEL 1;
+COMP "regout<7>" LOCATE = SITE "R4" LEVEL 1;
+COMP "clr" LOCATE = SITE "K12" LEVEL 1;
+COMP "output<0>" LOCATE = SITE "C17" LEVEL 1;
+COMP "output<1>" LOCATE = SITE "H14" LEVEL 1;
+COMP "control" LOCATE = SITE "L15" LEVEL 1;
+COMP "output<2>" LOCATE = SITE "J17" LEVEL 1;
+COMP "output<3>" LOCATE = SITE "G14" LEVEL 1;
+COMP "output<4>" LOCATE = SITE "D16" LEVEL 1;
+COMP "output<5>" LOCATE = SITE "D17" LEVEL 1;
+COMP "output<6>" LOCATE = SITE "F18" LEVEL 1;
+COMP "output<7>" LOCATE = SITE "L18" LEVEL 1;
+COMP "display<0>" LOCATE = SITE "F17" LEVEL 1;
+COMP "display<1>" LOCATE = SITE "H17" LEVEL 1;
+COMP "input<0>" LOCATE = SITE "G18" LEVEL 1;
+COMP "display<2>" LOCATE = SITE "C18" LEVEL 1;
+COMP "input<1>" LOCATE = SITE "H18" LEVEL 1;
+COMP "display<3>" LOCATE = SITE "F15" LEVEL 1;
+COMP "input<2>" LOCATE = SITE "K18" LEVEL 1;
+COMP "input<3>" LOCATE = SITE "K17" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

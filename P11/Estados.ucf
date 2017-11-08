@@ -1,0 +1,42 @@
+# 50MHz clock pin for Nexys 2 Board
+NET "clk"         LOC = "B8";    # Sch name = GCLK0
+
+# 7-segment display
+NET "output[7]"      LOC = "L18";   # Sch name = CA
+NET "output[6]"      LOC = "F18";   # Sch name = CB
+NET "output[5]"      LOC = "D17";   # Sch name = CC
+NET "output[4]"      LOC = "D16";   # Sch name = CD
+NET "output[3]"      LOC = "G14";   # Sch name = CE
+NET "output[2]"      LOC = "J17";   # Sch name = CF
+NET "output[1]"      LOC = "H14";   # Sch name = CG
+NET "output[0]"      LOC = "C17";   # Sch name = DP
+
+# anodes of the 7-segment display 
+NET "display[3]"		  LOC = "F15";   # Sch name = AN3
+NET "display[2]"       LOC = "C18";   # Sch name = AN2
+NET "display[1]"       LOC = "H17";   # Sch name = AN1
+NET "display[0]"       LOC = "F17";   # Sch name = AN0
+
+# 8 slide switches (input)
+NET "input[0]"       LOC = "G18";   # Sch name = SW0
+NET "input[1]"       LOC = "H18";   # Sch name = SW1
+NET "input[2]"       LOC = "K18";   # Sch name = SW2
+NET "input[3]"       LOC = "K17";   # Sch name = SW3
+NET "input[4]"       LOC = "L14";   # Sch name = SW4
+NET "input[5]"       LOC = "L13";   # Sch name = SW5
+NET "input[6]"       LOC = "N17";   # Sch name = SW6
+NET "input[7]"       LOC = "R17";   # Sch name = SW7
+
+# 8 leds (Serial_register)
+NET "regout[0]"      LOC = "J14";   # Sch name = JD10/LD0
+NET "regout[1]"      LOC = "J15";   # Sch name = JD9/LD1
+NET "regout[2]"      LOC = "K15";   # Sch name = JD8/LD2
+NET "regout[3]"      LOC = "K14";   # Sch name = JD7/LD3
+NET "regout[4]"      LOC = "E17";   # Sch name = LD4 s3e500 only
+NET "regout[5]"      LOC = "P15";   # Sch name = LD5 s3e500 only
+NET "regout[6]"      LOC = "F4";    # Sch name = LD6 s3e500 only
+NET "regout[7]"      LOC = "R4";    # Sch name = LD7 s3e500 only
+
+# control and clear
+NET "control"      LOC = "L15";   # Sch name = JA1
+NET "clr"      LOC = "K12";   # Sch name = JA2

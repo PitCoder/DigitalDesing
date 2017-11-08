@@ -1,0 +1,415 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.29 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.29 secs
+ 
+--> Reading design: Estados.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Estados.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Estados"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : Estados
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/MaquinadeEstados/Estados.vhd" in Library work.
+Entity <estados> compiled.
+Entity <estados> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Estados> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Estados> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <display> in unit <Estados> has a constant value of 1110 during circuit operation. The register is replaced by logic.
+Entity <Estados> analyzed. Unit <Estados> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Estados>.
+    Related source file is "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/MaquinadeEstados/Estados.vhd".
+    Found finite state machine <FSM_0> for signal <future_state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 8                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | future_state$not0000      (positive)           |
+    | Reset              | clr                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Power Up State     | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <regout>.
+    Found 8-bit register for signal <output>.
+    Found 28-bit up counter for signal <prescaler>.
+    Found 8-bit register for signal <Serial_register>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  16 D-type flip-flop(s).
+Unit <Estados> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 28-bit up counter                                     : 1
+# Registers                                            : 3
+ 8-bit register                                        : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <future_state/FSM> on signal <future_state[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 001   | 001
+ 010   | 010
+ 011   | 011
+ 100   | 100
+-------------------
+WARNING:Xst:1710 - FF/Latch <0> (without init value) has a constant value of 1 in block <output>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <1> (without init value) has a constant value of 0 in block <output>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <2> (without init value) has a constant value of 0 in block <output>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <3> (without init value) has a constant value of 0 in block <output>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <7> (without init value) has a constant value of 0 in block <output>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 1
+ 28-bit up counter                                     : 1
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <output_7> (without init value) has a constant value of 0 in block <Estados>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_3> (without init value) has a constant value of 0 in block <Estados>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_2> (without init value) has a constant value of 0 in block <Estados>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_1> (without init value) has a constant value of 0 in block <Estados>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <output_0> (without init value) has a constant value of 1 in block <Estados>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <output_6> in Unit <Estados> is equivalent to the following FF/Latch, which will be removed : <output_5> 
+
+Optimizing unit <Estados> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Estados, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 49
+ Flip-Flops                                            : 49
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Estados.ngr
+Top Level Output File Name         : Estados
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 31
+
+Cell Usage :
+# BELS                             : 144
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 27
+#      LUT2                        : 31
+#      LUT3                        : 11
+#      LUT4                        : 8
+#      MUXCY                       : 34
+#      VCC                         : 1
+#      XORCY                       : 28
+# FlipFlops/Latches                : 49
+#      FDCE                        : 12
+#      FDE                         : 36
+#      FDPE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 30
+#      IBUF                        : 10
+#      OBUF                        : 20
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       46  out of   4656     0%  
+ Number of Slice Flip Flops:             49  out of   9312     0%  
+ Number of 4 input LUTs:                 80  out of   9312     0%  
+ Number of IOs:                          31
+ Number of bonded IOBs:                  31  out of    232    13%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 49    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+clr_inv(clr_inv1_INV_0:O)          | NONE(Serial_register_0)| 13    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.599ns (Maximum Frequency: 178.603MHz)
+   Minimum input arrival time before clock: 4.159ns
+   Maximum output required time after clock: 4.063ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.599ns (frequency: 178.603MHz)
+  Total number of paths / destination ports: 1806 / 70
+-------------------------------------------------------------------------
+Delay:               5.599ns (Levels of Logic = 9)
+  Source:            prescaler_7 (FF)
+  Destination:       Serial_register_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: prescaler_7 to Serial_register_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.514   0.532  prescaler_7 (prescaler_7)
+     LUT4:I0->O            1   0.612   0.000  prescaler_cmp_eq0000_wg_lut<0> (prescaler_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  prescaler_cmp_eq0000_wg_cy<0> (prescaler_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  prescaler_cmp_eq0000_wg_cy<1> (prescaler_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  prescaler_cmp_eq0000_wg_cy<2> (prescaler_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  prescaler_cmp_eq0000_wg_cy<3> (prescaler_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  prescaler_cmp_eq0000_wg_cy<4> (prescaler_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  prescaler_cmp_eq0000_wg_cy<5> (prescaler_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O          31   0.399   1.142  prescaler_cmp_eq0000_wg_cy<6> (prescaler_cmp_eq0000)
+     LUT2:I1->O            8   0.612   0.643  Serial_register_not00011 (Serial_register_not0001)
+     FDCE:CE                   0.483          Serial_register_0
+    ----------------------------------------
+    Total                      5.599ns (3.282ns logic, 2.317ns route)
+                                       (58.6% logic, 41.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 101 / 57
+-------------------------------------------------------------------------
+Offset:              4.159ns (Levels of Logic = 2)
+  Source:            control (PAD)
+  Destination:       prescaler_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: control to prescaler_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   1.106   0.886  control_IBUF (control_IBUF)
+     LUT2:I1->O           28   0.612   1.072  prescaler_and00001 (prescaler_and0000)
+     FDE:CE                    0.483          prescaler_0
+    ----------------------------------------
+    Total                      4.159ns (2.201ns logic, 1.958ns route)
+                                       (52.9% logic, 47.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              4.063ns (Levels of Logic = 1)
+  Source:            output_6 (FF)
+  Destination:       output<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: output_6 to output<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q             2   0.514   0.380  output_6 (output_6)
+     OBUF:I->O                 3.169          output_6_OBUF (output<6>)
+    ----------------------------------------
+    Total                      4.063ns (3.683ns logic, 0.380ns route)
+                                       (90.6% logic, 9.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.68 secs
+ 
+--> 
+
+Total memory usage is 295936 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\HeadHunters\Desktop\4to Semestre\DSD\MaquinadeEstados\Estados.ncd
+OUTFILE=C:\Users\HeadHunters\Desktop\4to Semestre\DSD\MaquinadeEstados\Estados.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=C:\Users\HeadHunters\Desktop\4to Semestre\DSD\MaquinadeEstados
+LICENSE=WebPack
+USER_INFO=__0_0_0
