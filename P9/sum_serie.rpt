@@ -1,0 +1,480 @@
+
+     | | | | | | |
+   _________________
+  -|               |-
+  -|               |-
+  -|               |-
+  -|    CYPRESS    |-
+  -|               |-
+  -|               |-   Warp VHDL Synthesis Compiler: Version 6.3 IR 35
+  -|               |-   Copyright (C) 1991-2001 Cypress Semiconductor
+   |_______________|
+     | | | | | | |
+
+======================================================================
+Compiling:  sum_serie.vhd
+Options:    -m -yu -e10 -w100 -o2 -ygs -fP -v10 -dc22v10 -ppalc22v10d-25pc -b sum_serie.vhd -u sum_serie.hie
+======================================================================
+
+vhdlfe V6.3 IR 35:  VHDL parser
+Fri Apr 21 16:47:13 2017
+
+Library 'work' => directory 'lc22v10'
+Linking 'C:\Archivos de programa\Cypress\Warp\bin\std.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\cypress.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\work\cypress.vif'.
+Library 'ieee' => directory 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work'
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work\syntocyp.vif'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work\synusgnd.vif'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work\synarith.vif'.
+
+vhdlfe:  No errors.
+
+
+tovif V6.3 IR 35:  High-level synthesis
+Fri Apr 21 16:47:14 2017
+
+Linking 'C:\Archivos de programa\Cypress\Warp\bin\std.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\cypress.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\work\cypress.vif'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work\syntocyp.vif'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work\synusgnd.vif'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work\synarith.vif'.
+
+tovif:  No errors.
+
+
+topld V6.3 IR 35:  Synthesis and optimization
+Fri Apr 21 16:47:14 2017
+
+Linking 'C:\Archivos de programa\Cypress\Warp\bin\std.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\cypress.vhd'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\common\work\cypress.vif'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work\stdlogic.vif'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work\syntocyp.vif'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work\synusgnd.vif'.
+Linking 'C:\Archivos de programa\Cypress\Warp\lib\ieee\work\synarith.vif'.
+
+----------------------------------------------------------
+Detecting unused logic.
+----------------------------------------------------------
+    User names
+	s
+
+
+Deleted 1 User equation or component.
+Deleted 1 Synthesized equation or component.
+
+------------------------------------------------------
+Alias Detection
+------------------------------------------------------
+
+------------------------------------------------------
+Aliased 0 equations, 16 wires.
+------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification
+----------------------------------------------------------
+
+----------------------------------------------------------
+Circuit simplification results:
+
+	Expanded 0 signals.
+	Turned 0 signals into soft nodes.
+	Maximum default expansion cost was set at 10.
+----------------------------------------------------------
+Created 49 PLD nodes.
+
+topld:  No errors.
+
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+DESIGN HEADER INFORMATION  (16:47:15)
+
+Input File(s): sum_serie.pla
+Device       : C22V10
+Package      : palc22v10d-25pc
+ReportFile   : sum_serie.rpt
+
+Program Controls:
+    COMMAND LANGUAGE_VHDL 
+    COMMAND PROPERTY BUS_HOLD ENABLE 
+
+Signal Requests:
+    GROUP USEPOL ALL
+    GROUP FAST_SLEW ALL
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+OPTIMIZATION OPTIONS       (16:47:15)
+
+Messages:
+  Information: Process virtual 'qtD'qtD ... expanded.
+  Information: Process virtual 'counter_IBV_0D'counter_IBV_0D ... expanded.
+  Information: Process virtual 'counter_IBV_1D'counter_IBV_1D ... expanded.
+  Information: Process virtual 'counter_IBV_2D'counter_IBV_2D ... expanded.
+  Information: Process virtual '\output(0)D\'\output(0)D\ ... expanded.
+  Information: Process virtual '\output(1)D\'\output(1)D\ ... expanded.
+  Information: Process virtual '\output(2)D\'\output(2)D\ ... expanded.
+  Information: Process virtual '\output(3)D\'\output(3)D\ ... expanded.
+  Information: Process virtual 'carryD'carryD ... expanded.
+  Information: Process virtual 'qt' ... converted to NODE.
+  Information: Process virtual 'counter_IBV_0' ... converted to NODE.
+  Information: Process virtual 'counter_IBV_1' ... converted to NODE.
+  Information: Process virtual 'counter_IBV_2' ... converted to NODE.
+  Information: Optimizing logic using best output polarity for signals:
+         carry.D counter_IBV_0.D counter_IBV_1.D counter_IBV_2.D output(0).D
+         output(1).D output(2).D output(3).D qt.D
+
+  Information: Selected logic optimization OFF for signals:
+         carry.AR carry.C counter_IBV_0.AR counter_IBV_0.C counter_IBV_1.AR
+         counter_IBV_1.C counter_IBV_2.AR counter_IBV_2.C output(0).AR
+         output(0).C output(1).AR output(1).C output(2).AR output(2).C
+         output(3).AR output(3).C qt.AR qt.C
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Optimizer Software:       MINOPT.EXE     01/NOV/1999  [v4.02 ] 6.3 IR 35
+
+LOGIC MINIMIZATION         ()
+
+Messages:
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully
+----------------------------------------------------------------------------
+PLD Optimizer Software:       DSGNOPT.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+OPTIMIZATION OPTIONS       (16:47:15)
+
+Messages:
+  Information: Optimizing Banked Preset/Reset requirements.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+<CYPRESSTAG name="Equations" icon=FILE_RPT_EQUATION>
+DESIGN EQUATIONS           (16:47:15)
+</CYPRESSTAG>
+
+    carry.D =
+          b(3) * control * counter_IBV_0.Q * counter_IBV_1.Q * 
+          /counter_IBV_2.Q * qt.Q 
+        + a(3) * control * counter_IBV_0.Q * counter_IBV_1.Q * 
+          /counter_IBV_2.Q * qt.Q 
+        + a(3) * b(3) * control * counter_IBV_0.Q * counter_IBV_1.Q * 
+          /counter_IBV_2.Q 
+        + b(2) * control * /counter_IBV_0.Q * counter_IBV_1.Q * 
+          /counter_IBV_2.Q * qt.Q 
+        + a(2) * control * /counter_IBV_0.Q * counter_IBV_1.Q * 
+          /counter_IBV_2.Q * qt.Q 
+        + a(2) * b(2) * control * /counter_IBV_0.Q * counter_IBV_1.Q * 
+          /counter_IBV_2.Q 
+        + b(1) * control * counter_IBV_0.Q * /counter_IBV_1.Q * 
+          /counter_IBV_2.Q * qt.Q 
+        + a(1) * control * counter_IBV_0.Q * /counter_IBV_1.Q * 
+          /counter_IBV_2.Q * qt.Q 
+        + a(1) * b(1) * control * counter_IBV_0.Q * /counter_IBV_1.Q * 
+          /counter_IBV_2.Q 
+        + b(0) * control * /counter_IBV_0.Q * /counter_IBV_1.Q * 
+          /counter_IBV_2.Q * qt.Q 
+        + a(0) * control * /counter_IBV_0.Q * /counter_IBV_1.Q * 
+          /counter_IBV_2.Q * qt.Q 
+        + a(0) * b(0) * control * /counter_IBV_0.Q * /counter_IBV_1.Q * 
+          /counter_IBV_2.Q 
+        + carry.Q * counter_IBV_2.Q 
+        + carry.Q * /control 
+
+    carry.AR =
+          /clr 
+
+    carry.SP =
+          GND
+
+    carry.C =
+          clk 
+
+    counter_IBV_0.D =
+          control * /counter_IBV_0.Q * /counter_IBV_2.Q 
+        + counter_IBV_0.Q * counter_IBV_2.Q 
+        + /control * counter_IBV_0.Q 
+
+    counter_IBV_0.AR =
+          /clr 
+
+    counter_IBV_0.SP =
+          GND
+
+    counter_IBV_0.C =
+          clk 
+
+    counter_IBV_1.D =
+          control * counter_IBV_0.Q * /counter_IBV_1.Q * /counter_IBV_2.Q 
+        + counter_IBV_1.Q * counter_IBV_2.Q 
+        + /control * counter_IBV_1.Q 
+        + /counter_IBV_0.Q * counter_IBV_1.Q 
+
+    counter_IBV_1.AR =
+          /clr 
+
+    counter_IBV_1.SP =
+          GND
+
+    counter_IBV_1.C =
+          clk 
+
+    counter_IBV_2.D =
+          control * counter_IBV_0.Q * counter_IBV_1.Q 
+        + counter_IBV_2.Q 
+
+    counter_IBV_2.AR =
+          /clr 
+
+    counter_IBV_2.SP =
+          GND
+
+    counter_IBV_2.C =
+          clk 
+
+    output(0).D =
+          a(0) * b(0) * control * /counter_IBV_0.Q * /counter_IBV_1.Q * 
+          /counter_IBV_2.Q * qt.Q 
+        + /a(0) * /b(0) * control * /counter_IBV_0.Q * /counter_IBV_1.Q * 
+          /counter_IBV_2.Q * qt.Q 
+        + /a(0) * b(0) * control * /counter_IBV_0.Q * /counter_IBV_1.Q * 
+          /counter_IBV_2.Q * /qt.Q 
+        + a(0) * /b(0) * control * /counter_IBV_0.Q * /counter_IBV_1.Q * 
+          /counter_IBV_2.Q * /qt.Q 
+        + counter_IBV_2.Q * output(0).Q 
+        + counter_IBV_1.Q * output(0).Q 
+        + counter_IBV_0.Q * output(0).Q 
+        + /control * output(0).Q 
+
+    output(0).AR =
+          /clr 
+
+    output(0).SP =
+          GND
+
+    output(0).C =
+          clk 
+
+    output(1).D =
+          a(1) * b(1) * control * counter_IBV_0.Q * /counter_IBV_1.Q * 
+          /counter_IBV_2.Q * qt.Q 
+        + /a(1) * /b(1) * control * counter_IBV_0.Q * /counter_IBV_1.Q * 
+          /counter_IBV_2.Q * qt.Q 
+        + /a(1) * b(1) * control * counter_IBV_0.Q * /counter_IBV_1.Q * 
+          /counter_IBV_2.Q * /qt.Q 
+        + a(1) * /b(1) * control * counter_IBV_0.Q * /counter_IBV_1.Q * 
+          /counter_IBV_2.Q * /qt.Q 
+        + counter_IBV_2.Q * output(1).Q 
+        + counter_IBV_1.Q * output(1).Q 
+        + /control * output(1).Q 
+        + /counter_IBV_0.Q * output(1).Q 
+
+    output(1).AR =
+          /clr 
+
+    output(1).SP =
+          GND
+
+    output(1).C =
+          clk 
+
+    output(2).D =
+          a(2) * b(2) * control * /counter_IBV_0.Q * counter_IBV_1.Q * 
+          /counter_IBV_2.Q * qt.Q 
+        + /a(2) * /b(2) * control * /counter_IBV_0.Q * counter_IBV_1.Q * 
+          /counter_IBV_2.Q * qt.Q 
+        + /a(2) * b(2) * control * /counter_IBV_0.Q * counter_IBV_1.Q * 
+          /counter_IBV_2.Q * /qt.Q 
+        + a(2) * /b(2) * control * /counter_IBV_0.Q * counter_IBV_1.Q * 
+          /counter_IBV_2.Q * /qt.Q 
+        + counter_IBV_2.Q * output(2).Q 
+        + counter_IBV_0.Q * output(2).Q 
+        + /control * output(2).Q 
+        + /counter_IBV_1.Q * output(2).Q 
+
+    output(2).AR =
+          /clr 
+
+    output(2).SP =
+          GND
+
+    output(2).C =
+          clk 
+
+    output(3).D =
+          a(3) * b(3) * control * counter_IBV_0.Q * counter_IBV_1.Q * 
+          /counter_IBV_2.Q * qt.Q 
+        + /a(3) * /b(3) * control * counter_IBV_0.Q * counter_IBV_1.Q * 
+          /counter_IBV_2.Q * qt.Q 
+        + /a(3) * b(3) * control * counter_IBV_0.Q * counter_IBV_1.Q * 
+          /counter_IBV_2.Q * /qt.Q 
+        + a(3) * /b(3) * control * counter_IBV_0.Q * counter_IBV_1.Q * 
+          /counter_IBV_2.Q * /qt.Q 
+        + counter_IBV_2.Q * output(3).Q 
+        + /control * output(3).Q 
+        + /counter_IBV_0.Q * output(3).Q 
+        + /counter_IBV_1.Q * output(3).Q 
+
+    output(3).AR =
+          /clr 
+
+    output(3).SP =
+          GND
+
+    output(3).C =
+          clk 
+
+    qt.D =
+          a(3) * b(3) * control * counter_IBV_0.Q * counter_IBV_1.Q * 
+          /counter_IBV_2.Q 
+        + a(2) * b(2) * control * /counter_IBV_0.Q * counter_IBV_1.Q * 
+          /counter_IBV_2.Q 
+        + a(1) * b(1) * control * counter_IBV_0.Q * /counter_IBV_1.Q * 
+          /counter_IBV_2.Q 
+        + a(0) * b(0) * control * /counter_IBV_0.Q * /counter_IBV_1.Q * 
+          /counter_IBV_2.Q 
+        + b(3) * counter_IBV_0.Q * counter_IBV_1.Q * qt.Q 
+        + a(3) * counter_IBV_0.Q * counter_IBV_1.Q * qt.Q 
+        + b(2) * /counter_IBV_0.Q * counter_IBV_1.Q * qt.Q 
+        + a(2) * /counter_IBV_0.Q * counter_IBV_1.Q * qt.Q 
+        + b(1) * counter_IBV_0.Q * /counter_IBV_1.Q * qt.Q 
+        + a(1) * counter_IBV_0.Q * /counter_IBV_1.Q * qt.Q 
+        + b(0) * /counter_IBV_0.Q * /counter_IBV_1.Q * qt.Q 
+        + a(0) * /counter_IBV_0.Q * /counter_IBV_1.Q * qt.Q 
+        + counter_IBV_2.Q * qt.Q 
+        + /control * qt.Q 
+
+    qt.AR =
+          /clr 
+
+    qt.SP =
+          GND
+
+    qt.C =
+          clk 
+
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+DESIGN RULE CHECK          (16:47:15)
+
+Messages:
+                 None.
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+<CYPRESSTAG name="Pinout" icon=FILE_RPT_PINOUT>
+PINOUT INFORMATION   (16:47:15)
+</CYPRESSTAG>
+Messages:
+  Information: Checking for duplicate NODE logic.
+                 None.
+
+
+                                 C22V10
+                 __________________________________________
+            clk =| 1|                                  |24|* not used       
+            clr =| 2|                                  |23|= output(2)      
+        control =| 3|                                  |22|= output(0)      
+           b(3) =| 4|                                  |21|= (counter_IBV.. 
+           b(2) =| 5|                                  |20|= carry          
+           b(1) =| 6|                                  |19|* not used       
+           b(0) =| 7|                                  |18|= (counter_IBV.. 
+           a(3) =| 8|                                  |17|= (qt)           
+           a(2) =| 9|                                  |16|= (counter_IBV.. 
+           a(1) =|10|                                  |15|= output(1)      
+           a(0) =|11|                                  |14|= output(3)      
+       not used *|12|                                  |13|* not used       
+                 __________________________________________
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+<CYPRESSTAG name="Utilization" icon=FILE_RPT_UTILIZATION>
+RESOURCE UTILIZATION (16:47:15)
+</CYPRESSTAG>
+  Information: Macrocell Utilization.
+
+                     Description        Used     Max
+                 ______________________________________
+                 | Dedicated Inputs   |   10  |   11  |
+                 | Clock/Inputs       |    1  |    1  |
+                 | I/O Macrocells     |    9  |   10  |
+                 ______________________________________
+                                          20  /   22   = 90  %
+
+
+  Information: Output Logic Product Term Utilization.
+
+                  Node#  Output Signal Name  Used   Max
+                 ________________________________________
+                 | 14  |  output(3)       |   8  |   8  |
+                 | 15  |  output(1)       |   8  |  10  |
+                 | 16  |  counter_IBV_1   |   4  |  12  |
+                 | 17  |  qt              |  14  |  14  |
+                 | 18  |  counter_IBV_2   |   2  |  16  |
+                 | 19  |  Unused          |   0  |  16  |
+                 | 20  |  carry           |  14  |  14  |
+                 | 21  |  counter_IBV_0   |   3  |  12  |
+                 | 22  |  output(0)       |   8  |  10  |
+                 | 23  |  output(2)       |   8  |   8  |
+                 | 25  |  Unused          |   0  |   1  |
+                 ________________________________________
+                                             69  / 121   = 57  %
+
+
+Completed Successfully  
+----------------------------------------------------------------------------
+PLD Compiler Software:        PLA2JED.EXE    31/03/2000  [v4.02 ] 6.3 IR 35
+
+JEDEC ASSEMBLE             (16:47:15)
+
+Messages:
+  Information: Output file 'sum_serie.pin' created.
+  Information: Output file 'sum_serie.jed' created.
+
+  Usercode:    
+  Checksum:    6D37
+
+
+
+Summary:
+                 Error Count = 0      Warning Count = 0
+
+Completed Successfully at 16:47:15
