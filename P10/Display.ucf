@@ -1,0 +1,21 @@
+# 50MHz clock pin for Nexys 2 Board
+NET "clk"         LOC = "B8";    # Sch name = GCLK0
+
+# 7-segment display
+NET "o[7]"      LOC = "L18";   # Sch name = CA
+NET "o[6]"      LOC = "F18";   # Sch name = CB
+NET "o[5]"      LOC = "D17";   # Sch name = CC
+NET "o[4]"      LOC = "D16";   # Sch name = CD
+NET "o[3]"      LOC = "G14";   # Sch name = CE
+NET "o[2]"      LOC = "J17";   # Sch name = CF
+NET "o[1]"      LOC = "H14";   # Sch name = CG
+NET "o[0]"      LOC = "C17";   # Sch name = DP
+
+# anodes of the 7-segment display 
+NET "d[0]"       LOC = "F17";   # Sch name = AN0
+NET "d[1]"       LOC = "H17";   # Sch name = AN1
+NET "d[2]"       LOC = "C18";   # Sch name = AN2
+NET "d[3]"		  LOC = "F15";   # Sch name = AN3
+
+# 1 slide switch (clear)
+NET "clr"       LOC = "G18";   # Sch name = SW0
