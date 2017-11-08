@@ -1,0 +1,127 @@
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 "EstadosSensores.ngc" EstadosSensores.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EstadosSensores_map.ncd EstadosSensores.ngd EstadosSensores.pcf 
+par -w -intstyle ise -ol high -t 1 EstadosSensores_map.ncd EstadosSensores.ncd EstadosSensores.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml EstadosSensores.twx EstadosSensores.ncd -o EstadosSensores.twr EstadosSensores.pcf 
+bitgen -intstyle ise -f EstadosSensores.ut EstadosSensores.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc EstadosSensores.ucf -p xc3s500e-fg320-5 "EstadosSensores.ngc" EstadosSensores.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EstadosSensores_map.ncd EstadosSensores.ngd EstadosSensores.pcf 
+par -w -intstyle ise -ol high -t 1 EstadosSensores_map.ncd EstadosSensores.ncd EstadosSensores.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml EstadosSensores.twx EstadosSensores.ncd -o EstadosSensores.twr EstadosSensores.pcf -ucf EstadosSensores.ucf 
+bitgen -intstyle ise -f EstadosSensores.ut EstadosSensores.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc EstadosSensores.ucf -p xc3s500e-fg320-5 "EstadosSensores.ngc" EstadosSensores.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EstadosSensores_map.ncd EstadosSensores.ngd EstadosSensores.pcf 
+par -w -intstyle ise -ol high -t 1 EstadosSensores_map.ncd EstadosSensores.ncd EstadosSensores.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml EstadosSensores.twx EstadosSensores.ncd -o EstadosSensores.twr EstadosSensores.pcf -ucf EstadosSensores.ucf 
+bitgen -intstyle ise -f EstadosSensores.ut EstadosSensores.ncd 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc EstadosSensores.ucf -p xc3s500e-fg320-5 "EstadosSensores.ngc" EstadosSensores.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EstadosSensores_map.ncd EstadosSensores.ngd EstadosSensores.pcf 
+par -w -intstyle ise -ol high -t 1 EstadosSensores_map.ncd EstadosSensores.ncd EstadosSensores.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml EstadosSensores.twx EstadosSensores.ncd -o EstadosSensores.twr EstadosSensores.pcf -ucf EstadosSensores.ucf 
+bitgen -intstyle ise -f EstadosSensores.ut EstadosSensores.ncd 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc EstadosSensores.ucf -p xc3s500e-fg320-5 "EstadosSensores.ngc" EstadosSensores.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EstadosSensores_map.ncd EstadosSensores.ngd EstadosSensores.pcf 
+par -w -intstyle ise -ol high -t 1 EstadosSensores_map.ncd EstadosSensores.ncd EstadosSensores.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml EstadosSensores.twx EstadosSensores.ncd -o EstadosSensores.twr EstadosSensores.pcf -ucf EstadosSensores.ucf 
+bitgen -intstyle ise -f EstadosSensores.ut EstadosSensores.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc EstadosSensores.ucf -p xc3s500e-fg320-5 "EstadosSensores.ngc" EstadosSensores.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EstadosSensores_map.ncd EstadosSensores.ngd EstadosSensores.pcf 
+par -w -intstyle ise -ol high -t 1 EstadosSensores_map.ncd EstadosSensores.ncd EstadosSensores.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml EstadosSensores.twx EstadosSensores.ncd -o EstadosSensores.twr EstadosSensores.pcf -ucf EstadosSensores.ucf 
+bitgen -intstyle ise -f EstadosSensores.ut EstadosSensores.ncd 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc EstadosSensores.ucf -p xc3s500e-fg320-5 "EstadosSensores.ngc" EstadosSensores.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EstadosSensores_map.ncd EstadosSensores.ngd EstadosSensores.pcf 
+par -w -intstyle ise -ol high -t 1 EstadosSensores_map.ncd EstadosSensores.ncd EstadosSensores.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml EstadosSensores.twx EstadosSensores.ncd -o EstadosSensores.twr EstadosSensores.pcf -ucf EstadosSensores.ucf 
+bitgen -intstyle ise -f EstadosSensores.ut EstadosSensores.ncd 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc EstadosSensores.ucf -p xc3s500e-fg320-5 "EstadosSensores.ngc" EstadosSensores.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EstadosSensores_map.ncd EstadosSensores.ngd EstadosSensores.pcf 
+par -w -intstyle ise -ol high -t 1 EstadosSensores_map.ncd EstadosSensores.ncd EstadosSensores.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml EstadosSensores.twx EstadosSensores.ncd -o EstadosSensores.twr EstadosSensores.pcf -ucf EstadosSensores.ucf 
+bitgen -intstyle ise -f EstadosSensores.ut EstadosSensores.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc EstadosSensores.ucf -p xc3s500e-fg320-5 "EstadosSensores.ngc" EstadosSensores.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EstadosSensores_map.ncd EstadosSensores.ngd EstadosSensores.pcf 
+par -w -intstyle ise -ol high -t 1 EstadosSensores_map.ncd EstadosSensores.ncd EstadosSensores.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml EstadosSensores.twx EstadosSensores.ncd -o EstadosSensores.twr EstadosSensores.pcf -ucf EstadosSensores.ucf 
+bitgen -intstyle ise -f EstadosSensores.ut EstadosSensores.ncd 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc EstadosSensores.ucf -p xc3s500e-fg320-5 "EstadosSensores.ngc" EstadosSensores.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EstadosSensores_map.ncd EstadosSensores.ngd EstadosSensores.pcf 
+par -w -intstyle ise -ol high -t 1 EstadosSensores_map.ncd EstadosSensores.ncd EstadosSensores.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml EstadosSensores.twx EstadosSensores.ncd -o EstadosSensores.twr EstadosSensores.pcf -ucf EstadosSensores.ucf 
+bitgen -intstyle ise -f EstadosSensores.ut EstadosSensores.ncd 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc EstadosSensores.ucf -p xc3s500e-fg320-5 "EstadosSensores.ngc" EstadosSensores.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EstadosSensores_map.ncd EstadosSensores.ngd EstadosSensores.pcf 
+par -w -intstyle ise -ol high -t 1 EstadosSensores_map.ncd EstadosSensores.ncd EstadosSensores.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml EstadosSensores.twx EstadosSensores.ncd -o EstadosSensores.twr EstadosSensores.pcf -ucf EstadosSensores.ucf 
+bitgen -intstyle ise -f EstadosSensores.ut EstadosSensores.ncd 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc EstadosSensores.ucf -p xc3s500e-fg320-5 "EstadosSensores.ngc" EstadosSensores.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EstadosSensores_map.ncd EstadosSensores.ngd EstadosSensores.pcf 
+par -w -intstyle ise -ol high -t 1 EstadosSensores_map.ncd EstadosSensores.ncd EstadosSensores.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml EstadosSensores.twx EstadosSensores.ncd -o EstadosSensores.twr EstadosSensores.pcf -ucf EstadosSensores.ucf 
+bitgen -intstyle ise -f EstadosSensores.ut EstadosSensores.ncd 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc EstadosSensores.ucf -p xc3s500e-fg320-5 "EstadosSensores.ngc" EstadosSensores.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EstadosSensores_map.ncd EstadosSensores.ngd EstadosSensores.pcf 
+par -w -intstyle ise -ol high -t 1 EstadosSensores_map.ncd EstadosSensores.ncd EstadosSensores.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml EstadosSensores.twx EstadosSensores.ncd -o EstadosSensores.twr EstadosSensores.pcf -ucf EstadosSensores.ucf 
+bitgen -intstyle ise -f EstadosSensores.ut EstadosSensores.ncd 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc EstadosSensores.ucf -p xc3s500e-fg320-5 "EstadosSensores.ngc" EstadosSensores.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EstadosSensores_map.ncd EstadosSensores.ngd EstadosSensores.pcf 
+par -w -intstyle ise -ol high -t 1 EstadosSensores_map.ncd EstadosSensores.ncd EstadosSensores.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml EstadosSensores.twx EstadosSensores.ncd -o EstadosSensores.twr EstadosSensores.pcf -ucf EstadosSensores.ucf 
+bitgen -intstyle ise -f EstadosSensores.ut EstadosSensores.ncd 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc EstadosSensores.ucf -p xc3s500e-fg320-5 "EstadosSensores.ngc" EstadosSensores.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EstadosSensores_map.ncd EstadosSensores.ngd EstadosSensores.pcf 
+par -w -intstyle ise -ol high -t 1 EstadosSensores_map.ncd EstadosSensores.ncd EstadosSensores.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml EstadosSensores.twx EstadosSensores.ncd -o EstadosSensores.twr EstadosSensores.pcf -ucf EstadosSensores.ucf 
+bitgen -intstyle ise -f EstadosSensores.ut EstadosSensores.ncd 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+xst -intstyle ise -ifn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.xst" -ofn "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc EstadosSensores.ucf -p xc3s500e-fg320-5 "EstadosSensores.ngc" EstadosSensores.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o EstadosSensores_map.ncd EstadosSensores.ngd EstadosSensores.pcf 
+par -w -intstyle ise -ol high -t 1 EstadosSensores_map.ncd EstadosSensores.ncd EstadosSensores.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml EstadosSensores.twx EstadosSensores.ncd -o EstadosSensores.twr EstadosSensores.pcf -ucf EstadosSensores.ucf 
+bitgen -intstyle ise -f EstadosSensores.ut EstadosSensores.ncd 

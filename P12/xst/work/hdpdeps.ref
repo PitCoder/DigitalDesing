@@ -1,0 +1,16 @@
+V3 6
+FL "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/ContadorDecadas.vhd" 2017/05/20.15:29:24 P.20131013
+PH work/decadecounter 1495312233 \
+      FL "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/ContadorDecadas.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+PB work/decadecounter 1495312234 \
+      FL "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/ContadorDecadas.vhd" \
+      PH work/decadecounter 1495312233
+FL "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.vhd" 2017/05/20.15:30:19 P.20131013
+EN work/EstadosSensores 1495312235 \
+      FL "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB work/decadecounter 1495312234
+AR work/EstadosSensores/Behavioral 1495312236 \
+      FL "C:/Users/HeadHunters/Desktop/4to Semestre/DSD/Sensores/EstadosSensores.vhd" \
+      EN work/EstadosSensores 1495312235
